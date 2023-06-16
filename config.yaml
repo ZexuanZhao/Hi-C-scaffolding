@@ -1,0 +1,18 @@
+#Read files
+asm: ""
+hiC_read1: "test_data/R1.fastq.gz"
+hiC_read2: "test_data/R2.fastq.gz"
+
+
+# Dependencies (path to the git cloned directory which will be added to path)
+juicer_tools_jar: "bin/juicer_tools_1.22.01.jar"
+
+# Parameters
+mapq_filter: 10
+
+# Threads and Memory (e.g. 800m 20g)
+threads: 20
+mem: 70G
+
+# Output directory
+outdir: "out"
