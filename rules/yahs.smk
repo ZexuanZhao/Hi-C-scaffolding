@@ -57,7 +57,7 @@ rule contact_matrix:
     conda:
         os.path.join(workflow.basedir,"envs/yahs.yaml")
     input:
-        aln = os.path.join(out_dir,"hic_contact_map", "assembly_scaffolded.alignments_sorted.txt")
+        aln = os.path.join(out_dir,"hic_contact_map", "assembly_scaffolded.alignments_sorted.txt"),
         chrom_size = os.path.join(out_dir, "hic_contact_map", "assembly_scaffolded_scaffolds_final.chrom.sizes")
     output:
         os.path.join(out_dir, "hic_contact_map", "assembly_scaffolded_scaffolds_final.hic")

@@ -26,7 +26,7 @@ rule hic_mapping:
     conda:
         os.path.join(workflow.basedir,"envs/arima_hic_mapping.yaml")
     input:
-        bwt = os.path.join(out_dir,"assembly","assembly.fasta.bwt"),,
+        bwt = os.path.join(out_dir,"assembly","assembly.fasta.bwt"),
         assembly = os.path.join(out_dir,"assembly","assembly.fasta"),
         R1 = config["hiC_read1"],
         R2 = config["hiC_read2"]

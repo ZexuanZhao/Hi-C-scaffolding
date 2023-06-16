@@ -22,4 +22,4 @@ include: "rules/yahs.smk"
 rule all:
     input:
         # Hi-C Assembly
-        expand(os.path.join(out_dir, "assembly", "hic_contact_map", "{type}_scaffolds_final.hic"), type = types)
+        os.path.join(out_dir, "hic_contact_map", "assembly_scaffolded_scaffolds_final.hic")
